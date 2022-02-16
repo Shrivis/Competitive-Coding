@@ -10,13 +10,11 @@ int binarySearch_iti(vector<int> &arr, int r, int l, int key);
 int main() {
     vector<int> arr { 1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
     int n = arr.size();
-    int key, index;
-    cout<<"Enter the values you want to seach for: ";
-    cin>>key;
+    int key = 5, index;
     index = binarySearch(arr, 0, n, key);
-    cout<<"Using recurtiion value found at position: "<<index+1;
+    cout<<"Using recurtiion value found at position: "<<index+1<<endl;
     index = binarySearch_iti(arr, 0, n, key);
-    cout<<"\nUsing itiration value found at position: "<<index+1;
+    cout<<"Using itiration value found at position: "<<index+1<<endl;;
     return 0;
 }
 

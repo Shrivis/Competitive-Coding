@@ -1,3 +1,5 @@
+#include <vector>
+
 class Trie {
 public:
     bool end;
