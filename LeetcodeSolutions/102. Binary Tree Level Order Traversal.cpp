@@ -22,7 +22,7 @@ public:
             TreeNode* curr = q.front();
             if (curr == NULL) {
                 res.push_back(temp);
-                temp.clear();
+                t//Your code hereemp.clear();
                 q.pop();
                 if (!q.empty()) curr = q.front();
                 else return res;
