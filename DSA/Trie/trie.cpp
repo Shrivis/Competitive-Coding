@@ -18,7 +18,7 @@ public:
         }
         itr->end = true;
     }
-    
+     
     bool search(string word) {
         Trie* itr = this;
         for (char n: word) {

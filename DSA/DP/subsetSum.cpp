@@ -12,3 +12,4 @@ bool isSubsetSum(int N, int arr[], int sum){
     }
     return t[N][sum];
 }
+
