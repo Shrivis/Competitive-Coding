@@ -29,7 +29,7 @@ class Map {
     void insert(pair<int, string> data) {
         int i = 0;
         while (true) {
-            int idx = (hash_function(data.first) + i*i) % m;
+            int idx = hash_function(data.first + i);
             if (this->valarray[idx]->is_empty) {
                 this->valarray[idx] = (new Node(data));
                 this->valarray[idx]->is_empty = false;
@@ -43,7 +43,7 @@ class Map {
     string getItem(int key) {
         int i = 0;
         while (i < m) {
-            int idx = (hash_function(key) + i*i) % m;
+            int idx = hash_function(key + i);
             if (this->valarray[idx]->is_empty and !this->valarray[idx]->deleted)
                 return "Key not present";
             if (this->valarray[idx]->key == key and
@@ -57,7 +57,7 @@ class Map {
     bool isPresent(int key) {
         int i = 0;
         while (i < m) {
-            int idx = (hash_function(key) + i*i) % m;
+            int idx = hash_function(key + i);
             if (this->valarray[idx]->is_empty and !this->valarray[idx]->deleted)
                 return false;
             if (this->valarray[idx]->key == key) return true;
@@ -76,7 +76,7 @@ class Map {
     string Delete(int key) {
         int i = 0;
         while (i < m) {
-            int idx = (hash_function(key) + i*i) % m;
+            int idx = hash_function(key + i);
             if (this->valarray[idx]->is_empty and !this->valarray[idx]->deleted)
                 return "can't delete. Element not present";
             if (this->valarray[idx]->key == key and
