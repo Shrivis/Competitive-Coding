@@ -1,7 +1,8 @@
 *.exe
+*/*.exe
+*/*/*.exe
 *.txt
 temp.*
 temp
 .vscode/
 temp/
-DSA/*.exe
