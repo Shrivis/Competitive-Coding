@@ -1,6 +1,6 @@
 #include <iostream>
 #include <queue>
-            using namespace std;
+using namespace std;
 
 class TreeNode {
     int val = 0;
