@@ -23,3 +23,6 @@ int main() {
     Ones(arr);
     return 0;
 }
+
+
+// extra __builtin_popcount() counts number of set bits in a numebr
