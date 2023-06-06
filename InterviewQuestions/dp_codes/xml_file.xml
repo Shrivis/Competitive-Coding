@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<all>
+	<items type="list">
+		<item_1 type="dict">
+			<id type="int">1</id>
+		</item_1>
+		<item_2 type="dict">
+			<id type="int">2</id>
+		</item_2>
+	</items>
+	<variables type="str">a</variables>
+	<variables type="str">b</variables>
+</all>

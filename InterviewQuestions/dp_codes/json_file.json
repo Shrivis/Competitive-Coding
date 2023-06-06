@@ -1,0 +1,1 @@
+{"all": {"items": {"@type": "list", "item_1": {"@type": "dict", "id": {"@type": "int", "#text": "1"}}, "item_2": {"@type": "dict", "id": {"@type": "int", "#text": "2"}}}, "variables": [{"@type": "str", "#text": "a"}, {"@type": "str", "#text": "b"}]}}
