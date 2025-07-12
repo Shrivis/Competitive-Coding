@@ -1,6 +1,5 @@
 *.exe
-*/*.exe
-*/*/*.exe
+**/*.exe
 *.txt
 temp.*
 temp
